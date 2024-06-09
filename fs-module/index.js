@@ -1,7 +1,7 @@
 console.log("hi");
 const fs=require('fs');
 
-fs.rename('file1.txt', 'file2.txt', (err)=>{
+fs.unlink('file2.txt', (err, data)=>{
     if(err) console.log(err);
-    else console.log("successful");
+    else console.log(data);
 })
