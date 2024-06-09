@@ -1,9 +1,9 @@
-exports.getName = () => {
+const getName = () => {
   return "Ahmadul Hasan";
 };
 
-exports.getAge = () => {
+const getAge = () => {
   return "X-24";
 };
 
-//module.exports = { getName, getAge };
+module.exports = { getName, getAge };
