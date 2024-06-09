@@ -1,7 +1,7 @@
 console.log("hi");
 const fs=require('fs');
 
-fs.readFile('file1.txt', 'utf-8', (err, data)=>{
+fs.rename('file1.txt', 'file2.txt', (err)=>{
     if(err) console.log(err);
-    else console.log(data);
+    else console.log("successful");
 })
