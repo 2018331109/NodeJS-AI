@@ -1,7 +1,7 @@
 console.log("hi");
 const fs=require('fs');
 
-fs.appendFile('file1.txt', ". I am 24", (err)=>{
+fs.readFile('file1.txt', 'utf-8', (err, data)=>{
     if(err) console.log(err);
-    else console.log("successfull");
+    else console.log(data);
 })
